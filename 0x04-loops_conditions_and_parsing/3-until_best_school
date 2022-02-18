@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 j=0
-
-while [ $j -ge 10 ];
+until [ $j -ge 10 ]
 do
-    echo "Best School";
-    ((j ++))
+	echo "Holberton School"
+	(( j++ ))
 done
