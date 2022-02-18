@@ -8,5 +8,5 @@ do
         echo "Hi";
     fi
         echo "Best School";
-        j=$((j + 1))
+        j=$((j))
 done
