@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
+
 j=0
 until [ $j -gt 9 ]
 do
-	echo "Holberton School";
+	echo "Holberton School"
 	(( j++ ))
 done
