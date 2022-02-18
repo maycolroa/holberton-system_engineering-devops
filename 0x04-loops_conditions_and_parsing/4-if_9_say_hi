@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
-j=0
-while [ $j -lt 9 ];
+j=1
+while [ $j -lt 10 ];
 do
-    if [ $j -eq 8 ];
+    if [ $j -eq 9 ];
     then
         echo "Hi";
     fi
