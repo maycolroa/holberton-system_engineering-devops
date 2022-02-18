@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# This script that displays Best School 10 times, but for
 j=1
-while [ $j -lt 10 ];
+while [ $j -le 10 ]
 do
-    if [ $j -eq 9 ];
+    echo "Best School"
+    if [ $j -eq 9 ]
     then
-        echo "Hi";
+	echo "Hi"
     fi
-        echo "Best School";
-        j=$((j))
+    j=$(( j + 1 ))
 done
