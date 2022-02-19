@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script, name it 67-stop_me_if_you_can
+# that kills the 7-highlander
+
+j=1
+trap 'echo "I am invincible!!!"' SIGTERM
+while [ $j ];
+do
+      echo "To infinity and beyond"
+      sleep 2
+done
