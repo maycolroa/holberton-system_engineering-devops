@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
-# displays numbers from 1 to 100
-j=1
-while [ $j -le 100 ]
-do
-    if [[ $((j % 5)) -eq 0 && $((j % 3)) -eq 0 ]]
+#Bash script that gives you
+#information file school
+
+if [[ -e "school" ]]
     then
-	echo "FizzBuzz"
-    elif [[ $((j % 3)) -eq 0 ]]
+       echo "school file exists"
+    if [[ -s "school" ]]
     then
-	echo "Fizz"
-    elif [[ $((j % 5)) -eq 0 ]]
-    then
-	echo "Buzz"
+	echo "school file is not empty"
     else
-	echo "$j"
+	echo "school file is empty"
     fi
-    j=$((j + 1))
-done
+    if [[ -f "school" ]]
+    then
+       echo "school is a regular file"
+    fi
+else
+   echo "school file does not exist"
+fi
