@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-FILENAME="/etc/passwd"
-while IFS=":" read 
-do
-done < /etc/passwd
+file=/etc/passwd
+
+while IFS= read -r line; do
+  echo $line
+done < "$file"
