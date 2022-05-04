@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-service apache2 restart
+# fixing whatever needed to be fixed
+echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
+echo "Hello Holberton" > /var/www/html/index.html
+sudo service apache2 restart
